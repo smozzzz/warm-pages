@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Warm Pages | الرئيسية</title>
+
+  <link rel="stylesheet" href="warmpages.css">
+</head>
+
+<body>
+
+<header class="site-header">
+
+  <div class="header-top">
+
+    <a class="brand" href="index.html">
+      Warm <span>Pages.</span>
+    </a>
+
+    <div class="header-tools">
+
+      <a href="books.html">
+        🛍 السلة <span id="cart-count">0</span>
+      </a>
+
+      <a href="login.html">
+        الحساب / Account
+      </a>
+
+      <label for="language">اللغة</label>
+
+      <select id="language">
+        <option>العربية</option>
+        <option>English</option>
+      </select>
+
+      <label for="currency">العملة</label>
+
+      <select id="currency">
+        <option value="SAR">SAR</option>
+        <option value="USD">USD</option>
+      </select>
+
+    </div>
+  </div>
+
+  <nav class="nav">
+
+    <a class="active" href="index.html">الرئيسية</a>
+    <a href="books.html">الكتب</a>
+    <a href="login.html">تسجيل الدخول</a>
+
+  </nav>
+
+</header>
+
+
+<main>
+
+  <section class="hero">
+
+    <div class="hero-copy">
+
+      <div class="eyebrow">
+        A LITTLE WORLD BETWEEN THE PAGES
+      </div>
+
+      <h1>
+        كل حكاية تبدأ<br>
+        بصفحة.
+      </h1>
+
+      <p>
+        اكتشفي كتباً تأخذك إلى عوالم جديدة.
+        اختاري حكايتك القادمة واجعلي للقراءة
+        مكاناً دافئاً في يومك.
+      </p>
+
+      <a class="button" href="books.html">
+        اكتشفي الكتب ←
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <section class="section">
+
+    <div class="section-heading">
+
+      <div>
+        <h2>اختيارات دافئة</h2>
+        <p>كتب اخترناها لترافق لحظاتك الهادئة.</p>
+      </div>
+
+      <a class="text-link" href="books.html">
+        عرض جميع الكتب
+      </a>
+
+    </div>
+
+
+    <div class="book-grid">
+
+      <!-- Book 1 -->
+
+      <article class="book-card">
+
+        <img
+          class="book-image"
+          src="https://covers.openlibrary.org/b/isbn/9780525559474-L.jpg"
+          alt="The Midnight Library">
+
+        <h3>The Midnight Library</h3>
+        <p class="book-author">Matt Haig</p>
+
+        <div class="book-bottom">
+
+          <span class="price"
+            data-sar="55" data-usd="15">
+            55 SAR
+          </span>
+
+          <button class="add-button"
+            onclick="addToCart()">
+            أضيفي للسلة +
+          </button>
+
+        </div>
+
+      </article>
+
+
+      <!-- Book 2 -->
+
+      <article class="book-card">
+
+        <img
+          class="book-image"
+          src="https://covers.openlibrary.org/b/isbn/9780735211292-L.jpg"
+          alt="Atomic Habits">
+
+        <h3>Atomic Habits</h3>
+        <p class="book-author">James Clear</p>
+
+        <div class="book-bottom">
+
+          <span class="price"
+            data-sar="48" data-usd="13">
+            48 SAR
+          </span>
+
+          <button class="add-button"
+            onclick="addToCart()">
+            أضيفي للسلة +
+          </button>
+
+        </div>
+
+      </article>
+
+
+      <!-- Book 3 -->
+
+      <article class="book-card">
+
+        <img
+          class="book-image"
+          src="https://covers.openlibrary.org/b/isbn/9780062315007-L.jpg"
+          alt="The Alchemist">
+
+        <h3>The Alchemist</h3>
+        <p class="book-author">Paulo Coelho</p>
+
+        <div class="book-bottom">
+
+          <span class="price"
+            data-sar="39" data-usd="10.5">
+            39 SAR
+          </span>
+
+          <button class="add-button"
+            onclick="addToCart()">
+            أضيفي للسلة +
+          </button>
+
+        </div>
+
+      </article>
+
+
+      <!-- Book 4 -->
+
+      <article class="book-card">
+
+        <img
+          class="book-image"
+          src="https://covers.openlibrary.org/b/isbn/9780147514011-L.jpg"
+          alt="Little Women">
+
+        <h3>Little Women</h3>
+        <p class="book-author">Louisa May Alcott</p>
+
+        <div class="book-bottom">
+
+          <span class="price"
+            data-sar="44" data-usd="12">
+            44 SAR
+          </span>
+
+          <button class="add-button"
+            onclick="addToCart()">
+            أضيفي للسلة +
+          </button>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <section class="feature-strip">
+
+    <div>
+      <strong>اختيارات مميزة</strong>
+      <span>Curated reads for every mood</span>
+    </div>
+
+    <div>
+      <strong>تجربة بسيطة</strong>
+      <span>A calm shopping experience</span>
+    </div>
+
+    <div>
+      <strong>مساحة للخيال</strong>
+      <span>Find your next favorite story</span>
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+  <div class="footer-main">
+
+    <div>
+      <div class="footer-brand">
+        Warm <span>Pages.</span>
+      </div>
+
+      <p>A little world between the pages.</p>
+      <p>عالم صغير بين صفحات الكتب.</p>
+    </div>
+
+    <div class="footer-contact">
+
+      <strong>تواصل معنا | Contact us</strong>
+
+      <p>للاستفسارات والاقتراحات</p>
+
+      <a href="mailto:hello@warmpages.com">
+        hello@warmpages.com
+      </a>
+
+    </div>
+
+  </div>
+
+  <div class="copyright">
+    © 2026 Warm Pages. All Rights Reserved. ®
+  </div>
+
+</footer>
+
+<script src="warmpages.js"></script>
+
+</body>
+</html>
