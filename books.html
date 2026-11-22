@@ -1,0 +1,301 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warm Pages | الكتب</title>
+  <link rel="stylesheet" href="warmpages.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="header-top">
+    <a class="brand" href="index.html">
+      Warm <span>Pages.</span>
+    </a>
+
+    <div class="header-tools">
+      <a href="books.html">
+        🛍 السلة <span id="cart-count">0</span>
+      </a>
+      <a href="login.html">الحساب / Account</a>
+
+      <label for="language">اللغة</label>
+      <select id="language">
+        <option>العربية</option>
+        <option>English</option>
+      </select>
+
+      <label for="currency">العملة</label>
+      <select id="currency">
+        <option value="SAR">SAR</option>
+        <option value="USD">USD</option>
+      </select>
+    </div>
+  </div>
+
+  <nav class="nav">
+    <a href="index.html">الرئيسية</a>
+    <a class="active" href="books.html">الكتب</a>
+    <a href="login.html">تسجيل الدخول</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-intro">
+    <div class="eyebrow">THE BOOKSHELF</div>
+    <h1>رفّ الكتب</h1>
+    <p>
+      تصفحي مجموعتنا واختاري الكتاب
+      الذي يشبه مزاجك اليوم.
+    </p>
+
+    <div class="category-pills">
+      <a class="pill" href="#novels">روايات</a>
+      <a class="pill" href="#self">تطوير الذات</a>
+      <a class="pill" href="#classic">كلاسيكيات</a>
+      <a class="pill" href="#all">جميع الكتب</a>
+    </div>
+  </section>
+
+  <section class="section" id="all">
+
+    <div class="section-heading">
+      <div>
+        <h2>جميع الكتب</h2>
+        <p>Books selected with love.</p>
+      </div>
+    </div>
+
+    <div class="book-grid">
+
+      <!-- Book 1 -->
+      <article class="book-card" id="novels">
+        <img class="book-image"
+          src="https://covers.openlibrary.org/b/isbn/9780525559474-L.jpg"
+          alt="The Midnight Library">
+
+        <h3>The Midnight Library</h3>
+        <p class="book-author">Matt Haig · رواية</p>
+
+        <div class="book-bottom">
+          <span class="price" data-sar="55" data-usd="15">55 SAR</span>
+          <button class="add-button" onclick="addToCart()">
+            أضيفي للسلة +
+          </button>
+        </div>
+      </article>
+
+      <!-- Book 2 -->
+      <article class="book-card" id="self">
+        <img class="book-image"
+          src="https://covers.openlibrary.org/b/isbn/9780735211292-L.jpg"
+          alt="Atomic Habits">
+
+        <h3>Atomic Habits</h3>
+        <p class="book-author">James Clear · تطوير الذات</p>
+
+        <div class="book-bottom">
+          <span class="price" data-sar="48" data-usd="13">48 SAR</span>
+          <button class="add-button" onclick="addToCart()">
+            أضيفي للسلة +
+          </button>
+        </div>
+      </article>
+
+      <!-- Book 3 -->
+      <article class="book-card">
+        <img class="book-image"
+          src="https://covers.openlibrary.org/b/isbn/9780062315007-L.jpg"
+          alt="The Alchemist">
+
+        <h3>The Alchemist</h3>
+        <p class="book-author">Paulo Coelho · رواية</p>
+
+        <div class="book-bottom">
+          <span class="price" data-sar="39" data-usd="10.5">39 SAR</span>
+          <button class="add-button" onclick="addToCart()">
+            أضيفي للسلة +
+          </button>
+        </div>
+      </article>
+
+      <!-- Book 4 -->
+      <article class="book-card" id="classic">
+        <img class="book-image"
+          src="https://covers.openlibrary.org/b/isbn/9780147514011-L.jpg"
+          alt="Little Women">
+
+        <h3>Little Women</h3>
+        <p class="book-author">Louisa May Alcott · كلاسيكيات</p>
+
+        <div class="book-bottom">
+          <span class="price" data-sar="44" data-usd="12">44 SAR</span>
+          <button class="add-button" onclick="addToCart()">
+            أضيفي للسلة +
+          </button>
+        </div>
+      </article>
+
+      <!-- Book 5 -->
+      <article class="book-card">
+        <img class="book-image"
+          src="https://covers.openlibrary.org/b/isbn/9781338151523-L.jpg"
+          alt="Before the Coffee Gets Cold">
+
+        <h3>Before the Coffee Gets Cold</h3>
+        <p class="book-author">Toshikazu Kawaguchi</p>
+
+        <div class="book-bottom">
+          <span class="price" data-sar="52" data-usd="14">52 SAR</span>
+          <button class="add-button" onclick="addToCart()">
+            أضيفي للسلة +
+          </button>
+        </div>
+      </article>
+
+      <!-- Book 6 -->
+      <article class="book-card">
+        <img class="book-image"
+          src="https://covers.openlibrary.org/b/isbn/9780143130727-L.jpg"
+          alt="Ikigai">
+
+        <h3>Ikigai</h3>
+        <p class="book-author">Hector Garcia · تطوير الذات</p>
+
+        <div class="book-bottom">
+          <span class="price" data-sar="46" data-usd="12.5">46 SAR</span>
+          <button class="add-button" onclick="addToCart()">
+            أضيفي للسلة +
+          </button>
+        </div>
+      </article>
+
+      <!-- Book 7 -->
+      <article class="book-card">
+        <img class="book-image"
+          src="https://covers.openlibrary.org/b/isbn/9780735224315-L.jpg"
+          alt="Little Fires Everywhere">
+
+        <h3>Little Fires Everywhere</h3>
+        <p class="book-author">Celeste Ng · رواية</p>
+
+        <div class="book-bottom">
+          <span class="price" data-sar="50" data-usd="13.5">50 SAR</span>
+          <button class="add-button" onclick="addToCart()">
+            أضيفي للسلة +
+          </button>
+        </div>
+      </article>
+
+      <!-- Book 8 -->
+      <article class="book-card">
+        <img class="book-image"
+          src="https://covers.openlibrary.org/b/isbn/9780147514011-L.jpg"
+          alt="The Secret Garden">
+
+        <h3>The Secret Garden</h3>
+        <p class="book-author">Frances H. Burnett · كلاسيكيات</p>
+
+        <div class="book-bottom">
+          <span class="price" data-sar="41" data-usd="11">41 SAR</span>
+          <button class="add-button" onclick="addToCart()">
+            أضيفي للسلة +
+          </button>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Price Table -->
+  <section class="section">
+
+    <div class="section-heading">
+      <div>
+        <h2>قائمة الأسعار</h2>
+        <p>جدول يوضح عينة من الكتب وأسعارها.</p>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>اسم الكتاب</th>
+            <th>المؤلف</th>
+            <th>التصنيف</th>
+            <th>السعر</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>The Midnight Library</td>
+            <td>Matt Haig</td>
+            <td>رواية</td>
+            <td>55 SAR</td>
+          </tr>
+
+          <tr>
+            <td>Atomic Habits</td>
+            <td>James Clear</td>
+            <td>تطوير الذات</td>
+            <td>48 SAR</td>
+          </tr>
+
+          <tr>
+            <td>The Alchemist</td>
+            <td>Paulo Coelho</td>
+            <td>رواية</td>
+            <td>39 SAR</td>
+          </tr>
+
+          <tr>
+            <td>Little Women</td>
+            <td>Louisa May Alcott</td>
+            <td>كلاسيكيات</td>
+            <td>44 SAR</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </section>
+
+</main>
+
+<footer class="site-footer">
+
+  <div class="footer-main">
+    <div>
+      <div class="footer-brand">
+        Warm <span>Pages.</span>
+      </div>
+      <p>A little world between the pages.</p>
+      <p>عالم صغير بين صفحات الكتب.</p>
+    </div>
+
+    <div class="footer-contact">
+      <strong>تواصل معنا | Contact us</strong>
+      <p>للاستفسارات والاقتراحات</p>
+      <a href="mailto:hello@warmpages.com">
+        hello@warmpages.com
+      </a>
+    </div>
+  </div>
+
+  <div class="copyright">
+    © 2026 Warm Pages. All Rights Reserved. ®
+  </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
